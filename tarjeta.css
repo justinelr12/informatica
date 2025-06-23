@@ -319,7 +319,7 @@ button {
     margin: 0 auto;
 }
 
-.card {
+.cardg {
     background-color: rgb(172, 204, 236);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
@@ -338,12 +338,12 @@ button {
     left: 580px;
 }
 
-.card:hover {
+.cardg:hover {
     transform: translateY(-7px) scale(1.03);
     box-shadow: 0 8px 32px rgba(75, 108, 183, 0.18);
 }
 
-.top {
+.topg {
     position: relative;
     background-image: url("Imagenes/Foto\ de\ Adali\ Garcia.jpg");
     background-repeat: no-repeat;
@@ -353,7 +353,7 @@ button {
     height: 180px;
 }
 
-.circle {
+.circleg {
     background-image: url(Imagenes/Foto\ de\ Adali\ Garcia\ \(5\).jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -370,12 +370,12 @@ button {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.circle:hover {
+.circleg:hover {
     box-shadow: -6px 3px 12px 3px #9797979e;
     transform: translate(-48%, 3%);
 }
 
-.circle img {
+.circleg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -383,7 +383,7 @@ button {
 
 
 
-.title {
+.titleg {
     font-weight: bold;
     font-size: 1.2rem;
     padding-left: 8px;
@@ -391,24 +391,24 @@ button {
     color: #225;
 }
 
-.content {
+.contentg {
     padding: 4px 10px;
 }
 
-.content ul {
+.contentg ul {
     list-style: circle;
     color: #b64242;
     padding-left: 18px;
 }
 
-.content li {
+.contentg li {
     line-height: 150%;
     color: #222;
     margin-bottom: 2px;
     list-style: none;
 }
 
-.foot {
+.footg {
     display: flex;
     justify-content: center;
     gap: 15px;
