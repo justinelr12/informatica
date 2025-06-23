@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+background: linear-gradient(#0213C6, #7106C9 , #9132DE , #C747EA);
+  background-size: cover;
+}
+.card {
+  background: rgba(444, 444, 444, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 300px;
+  overflow: hidden;
+  color: #333;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.top {
+  background-image: url('img/fondomorado2.gif');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  text-align: center;
+  margin-top: 60px;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000; 
+}
+
+.content {
+  font-size: 0.9rem;
+  color: #555; 
+  margin-top: 10px;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconos {
+  background-color: #ffffff;
+  color: white;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.iconos:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 90%; 
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    font-size: 0.85rem;
+  }
+
+  .iconos {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

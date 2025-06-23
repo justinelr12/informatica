@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 180px auto auto; 
+    grid-template-columns:lfr ;
+    border: 1px solid skyblue;
+    box-shadow: 0 0 8px 3px blue;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    width: 250px;
+}
+.top{
+grid-row: 1/1;
+position: relative;
+background-image: url("noche.avif");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position-y:-0px;
+background-color: white;
+}
+.circle{
+position: absolute;
+border-radius: 50%;
+box-shadow: 0 0 8px 3px blue;
+overflow: hidden;
+width: 120px;
+height: 120px;
+top: 25%;
+transform: translate(50%, 0%);
+&:hover{
+    box-shadow: -6px 3px 5px 3px skyblue;
+    transform: translate(51%, 2%);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+}
+.body{
+grid-row: 2/2;
+.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 8px;
+}
+.content{
+    padding: 4px 10px;
+    ul{
+        list-style: circle;
+    }
+    li{
+        line-height: 150%;
+        color: black;
+     }
+    }
+}
+.foot{
+    grid-row: 3/3;
+    text-align: center;
+    button{
+        background-color: blue;
+        border: 0;
+        border-radius: 20px;
+        width: 80%;
+        padding: 10%;
+        margin: 6px;
+        &:hover{
+            box-shadow: 0 0 5px 4px lightgray;
+        }
+        a{
+            color: skyblue;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        &hover a{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica 2 - Alumnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alumnos de Informatica</h1>
+    </header>
+
+    <main class="card-container">
+        <label for="modal-toggle-player1" class="player-card">
+            <img src="tarjeta isaac/Isaac.png" alt="Isaac" class="player-image">
+            <span class="player-rating">90</span>
+            <span class="player-position">M</span>
+            <div class="player-info-overlay">
+                <span class="player-name">Isaac Perdomo</span>
+            </div>
+        </label>
+    </main>
+
+    <input type="checkbox" id="modal-toggle-player1" class="modal-toggle" hidden>
+    <div class="modal" id="modal-player1">
+        <div class="modal-content">
+            <label for="modal-toggle-player1" class="close-button">&times;</label>
+            <div class="modal-body">
+                <div class="modal-card-display">
+                    <div class="player-card large-card">
+                        <img src="tarjeta isaac/Isaac.png" alt="Isaac" class="player-image">
+                        <span class="player-rating">90</span>
+                        <span class="player-position">M</span>
+                        <div class="player-info-overlay">
+                            <span class="player-name">Isaac Perdomo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-player-details">
+                    <h2>Detalles del Alumno</h2>
+                    <p><strong>Nombre:</strong>Isaac Perdomo</p>
+                    <p><strong>Indice:</strong>90</p>
+                    <p><strong>Sexo:</strong>M</p>
+                    <p><strong>M:</strong> 85</p>
+                    <p><strong>Mejor Nota:</strong>100</p>
+                    <p><strong>Habilidad:</strong>Ser Social</p>
+                    <p><strong>Materia Favorita:</strong>Mantenimiento</p>
+                    <p><strong>Deporte Favorito:</strong>Futbol</p>
+                    <p><strong>Hobby:</strong>Escuchar Musica</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

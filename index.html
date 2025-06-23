@@ -3,288 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> perfil personal</title>
+    <title>Document</title>
 </head>
-<style>
-.cuadroTarjeta{
-    
-    width: 400px;
-    height: 700px;
-    background-image: url(img/marco\ para\ carta.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 10%;
-    left: 40%;
-}
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.html">
 
-.circulo{    
-    background-image:url(img/20241228_163959.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid yellow 5px;
-    border-radius: 50%;
-    height: 190px;
-    width: 190px;
-    position: relative;
-    top: 60px;
-    left: 90px;
-}
-
-.personalb{
-      height: 40px;
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-    
-    position: absolute;
-    top: 240px;
-    left: -97px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-}
-.personalb:hover{
-    background-color: crimson;
-    
-}
-
-
-
-.pasatiemposb{
-        height: 40px;
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-   
- 
-    position: absolute;
-    top: 290px;
-    left: -97px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-}
-
-.pasatiemposb:hover{
-   background-color: aqua;
-}
-
-.Gustosb{
-        height: 40px;
-    width: 400px;
-    background-color: rgb(255, 255, 255);
-   
-   
-    position: absolute;
-    top: 340px;
-    left: -97px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-}
-
-.Gustosb:hover{
-   background-color: blueviolet;
-}
-
-.fotosb{
-        height: 40px;
-    width: 400px;
-    background-color: rgb(255, 255, 255); 
-    position: absolute;
-    top: 390px;
-    left: -97px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-}
-
-.fotosb:hover{
-    background-color: fuchsia;
-  
-}
-
-#miniVentana {
-  margin-top: 10px;
-  padding: 15px;
-  width: 250px;
-  background-color: #f9f9f9;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  display: none; 
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#ventana1{
-    z-index: 1;
-    position: relative;
-    top: 430px;
-    left: -40px;
-    
-    border: solid rgb(255, 0, 0) 2px;
-    animation: bajar 1s ease-in-out forwards;
-    background-color: white;
-    height: 100px;
-    width: 300px;
-    display: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-@keyframes bajar{
-    from{
-        
-        height: 0px;
-    }
-    to{
-       
-        height: 100px;
-    }
-}
-
-#ventana2{
- z-index: 1;
-    position: relative;
-    top: 430px;
-    left: -40px;
-    
-    border: solid rgb(255, 0, 0) 2px;
-    animation: bajar 1s ease-in-out forwards;
-    background-color: white;
-    height: 100px;
-    width: 300px;
-    display: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-@keyframes bajar{
-    from{
-        
-        height: 0px;
-    }
-    to{
-       
-        height: 100px;
-    }
-}
-
-#ventana3{
-     z-index: 1;
-    position: relative;
-    top: 430px;
-    left: -40px;
-   
-    border: solid rgb(255, 0, 0) 2px;
-    animation: bajar 1s ease-in-out forwards;
-    background-color: white;
-    height: 100px;
-    width: 300px;
-    display: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-@keyframes bajar{
-    from{
-        
-        height: 0px;
-    }
-    to{
-       
-        height: 100px;
-    }
-}
-
-#ventana4{
-    z-index: 1;
-    position: relative;
-    top: 430px;
-    left: -40px;
-   
-    border: solid rgb(255, 0, 0) 2px;
-    animation: bajar 1s ease-in-out forwards;
-    background-color: white;
-    height: 100px;
-    width: 300px;
-    display: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-#ventana4 a{
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: black;
-
-}
-#ventana4 a:hover{
-    font-size:35px;
-    color: blue;
-}
-
-@keyframes bajar{
-    from{
-        
-        height: 0px;
-    }
-    to{
-       
-        height: 120px;
-    }
-}
-
-
-</style>
 </head>
+
 <body>
-    <div class="cuadroTarjeta">
+
+   <div class="inicio">
+    <h1>Informatica</h1>
+
+    <select class = "val" onchange="cambiar(this.value)">
+    <option value = "2">Tema Claro
+    <option value = "3"> Tema Oscuro
+    </select>
+
+    <button class="information" onclick="cambiart(1)">informacion</button>
+    <button class="information2" onclick="cambiart(2)">Funcion de Carrera</button>
+    <button class="information3" onclick="cambiart(3)">contenido de carrera</button>
+
+    <a href="tarjetas.html">Alumnos</a>
         
-        <div class="cuadroinicial">
-            
-            <div class="circulo">
-                
-                <div class="botones">
-                    <button onclick="toggleVentana('ventana1')" class="personalb">Informacion</button>
-                    <div class="ventana" id="ventana1">
-                        <h2>Justin Ely Acosta Fernandez<br> 18 años</br></h2>
-                    </div>
-                    <button onclick="toggleVentana('ventana2')" class="pasatiemposb">Grado carrera</button>
-                    <div class="ventana" id="ventana2">
-                        <h1>12vo Informatica <br> Seccion 2</br></h1>
-                    </div>
-                    <button onclick="toggleVentana('ventana3')" class="Gustosb">computadora</button>
-                    <div class="ventana" id="ventana3">
-                        <h1>Laptop:Lenovo Touch</h1>
-                    </div>
-                    <button onclick="toggleVentana('ventana4')" class="fotosb
-                    ">Redes Sociales</button>
-                    <div class="ventana" id="ventana4">
-                        <a href="https://www.instagram.com/jchuggho?igsh=MWE2aTlwZDgyZzhpbw==">Instagram</a>
-                        <br><a href="https://www.facebook.com/share/1MeZKoMwui/">facebook</a></br>
-                            <a href="https://wa.me/50494332413">Whatsapp</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        function toggleVentana(id) {
-  const ventana = document.querySelectorAll('.ventana');
+   </div>
+   <div class="cuadrousuario" id="cuadrousuario">
+        <img src="img/4302027.webp" alt="200px" height="200px">
+        <h1 class="nombreusuario" id="nombreusuario">Justin Acosta</h1>
+        <h2 class="edadusuario" id="edadusuario">Edad:18</h2>
+        <h2 class="rolusuario" id="rolusuario">Alumno</h2>
 
-  ventana.forEach(ventana =>{
-    if(ventana.id == id){
-
-       ventana.style.display = (ventana.style.display === "none" || ventana.style.display === "") ? "block" : "none";}
-       else{
-        ventana.style.display = "none";
-       }
+</div>
+    <div class="reg"><h2>registrar</h2>
+    <input type="text" id="nuevoU" placeholder="Usuario nuevo">
+    <input type="text" class="edad" id="edad" placeholder="Ponga su edad">
+    <select class="roll" id="roll">
+     <option value="2">Alumno
+     <option value="3">Profesor  
+    </select>
     
-  }
-);  
-}
+    <button  class="but" onclick="registrar()">cargar</button></div>
+
+    <div  id="informacion" class="informacion" > 
+        
+              <div class="informationT1" id="informationT1"> <h1>Que es la carrera de informatica</h1>
+    
+        <br><p><b>La carrera de Informática</b> es una disciplina que abarca el estudio,diseño, desarrollo y 
+    aplicación de sistemas computacionales y tecnología de la información. Es una de las áreas más 
+    dinámicas y en constante evolución, ya que la tecnología avanza rápidamente y su impacto en la 
+    sociedad crece día a día.</br>
+    <br>En esta carrera, los estudiantes adquieren conocimientos sobre programación, estructuras de datos, 
+    algoritmos, bases de datos, redes de computadoras, ciberseguridad, inteligencia artificial y desarrollo 
+    de software, entre otros temas. También se enfocan en la resolución de problemas mediante el uso de la 
+    tecnología y aprenden a diseñar soluciones eficientes que optimicen procesos en diversas áreas como 
+    negocios, salud, educación y entretenimiento. </br>
+    <br>Un profesional en Informática puede desempeñarse en múltiples sectores, como desarrollo de aplicaciones,
+     administración de sistemas informáticos, análisis de datos, seguridad informática o incluso la 
+     investigación en nuevas tecnologías. Debido a la alta demanda de expertos en tecnología, la carrera 
+     ofrece amplias oportunidades laborales y posibilidades de especialización en distintas ramas, como 
+     ingeniería de software, ciencia de datos y computación en la nube. </br>
+   <br><b>En resumen</b> , es una opción académica ideal para quienes disfrutan de la tecnología, la lógica y la 
+   innovación, ya que permite no solo entender el funcionamiento de los sistemas informáticos, sino 
+   también crear herramientas que impacten positivamente en la sociedad. ¿Te gustaría saber más sobre 
+   alguna área específica de la Informática?</br>
+   </p>
+    </div>
+</div>
+<div class="imginf1" id="imginf1">
+<img  class="img1" src="img/pc-para-estudiantes.jpg" alt="250" height="250">
+<img  class="img2" src="img/Crimpadora-RJ45-1.jpg" alt="180" height="180">
+</div>
 
 
-    </script>
+
+    
 </body>
+
+
+<div  id="informationT2" class="informationT2" >
+    <h1>Funciones para que sirve la carrera de Informatica</h1>
+    <br><p><b>La carrera de Informática</b> nos sirve para desarrollar habilidades y conocimientos 
+        fundamentales en tecnología, lo que nos permite diseñar, optimizar y gestionar 
+        sistemas computacionales en diversos ámbitos. </br> 
+        <br>En un mundo cada vez más digitalizado, el papel de la informática es clave para la innovación y el crecimiento de la sociedad.
+Al estudiar esta carrera, podemos contribuir en distintas áreas como el desarrollo de software, 
+la ciberseguridad, el análisis de datos, la inteligencia artificial y la computación en la nube.</br>
+<br> Esto nos permite crear soluciones tecnológicas que mejoran la eficiencia en empresas, instituciones 
+ gubernamentales, el ámbito educativo, la medicina y el entretenimiento, entre otros sectores.
+Además, la informática nos brinda oportunidades laborales en un mercado altamente demandante y 
+en constante evolución, lo que abre puertas a empleos bien remunerados y permite la especialización 
+en áreas como ingeniería de software, ciencia de datos y administración de redes.</br> 
+<br>También nos da las
+ herramientas necesarias para emprender negocios propios en el campo de la tecnología y la innovación.
+En resumen, la carrera de Informática es esencial para quienes desean impactar en el desarrollo
+ tecnológico, mejorar procesos y contribuir a la transformación digital en diversas industrias.</p> </br>
+
+
+</div>
+
+<div class="imginf2" id="imginf2">
+<img  class="imgh1" src="img/Grado en Ingeniería en Organización Industrial Web1.webp" alt="200" height="200">
+<img  class="imgh2" src="img/programacion.webp" alt="180" height="180">
+</div>
+
+
+<div  id="informationT3" class="informationT3" >
+    <h1>Trabajos donde podemos ejercer los conocimiento de la carrera de Informatica</h1>
+    <p>Los conocimientos de Informática pbeden aplicarse en una gran variedad de trabajos, ya que la tecnología es fundamental en casi todos los sectores. Aquí te menciono algunas áreas donde los profesionales en informática pueden desempeñarse:
+<br><li><b>- Desarrollo de software: Creación y mantenimiento de aplicaciones, sitios web y programas para diferentes plataformas.</b></li></br>
+<br><li><b>- Ciberseguridad: Protección de sistemas informáticos contra amenazas digitales, como hackers y virus.</b></li></br>
+<br><li><b>- Análisis de datos y ciencia de datos: Interpretación y procesamiento de grandes volúmenes de información para ayudar en la toma de decisiones empresariales.</b></li></br>
+<br><li><b>- Administración de redes: Gestión y mantenimiento de redes de computadoras en empresas y organizaciones.</b></li></br>
+<br><li><b>- Inteligencia artificial y aprendizaje automático: Diseño de sistemas que pueden aprender y tomar decisiones automáticamente.</b></li></br>
+<br><li><b>- Computación en la nube: Implementación y gestión de servicios tecnológicos basados en la nube.</b></li></br>
+<br><li><b>- Soporte técnico y administración de sistemas: Solución de problemas informáticos y mantenimiento de infraestructura tecnológica en compañías.</b></li></br>
+<br><li><b>- Desarrollo de videojuegos: Creación de juegos digitales para diversas plataformas.</b></li></br>
+<br><li><b>- Emprendimiento tecnológico: Inicio de negocios propios enfocados en innovación y tecnología.</b></li></br>
+</p>
+
+
+
+</div>
+
+<script src="script.js"></script>
 </html>

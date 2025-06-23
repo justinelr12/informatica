@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuario</title>
+</head>
+<body>
+<style>
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@charset "utf-8";
+.nave{
+    background-color: black;
+    border:8px solid darkgoldenrod;
+    align-items: center;
+    justify-content: space-between;
+    max-width:1500px;
+    text-align: center;
+    margin: 0 auto;
+    width:100%;
+    padding:0 .5rem;
+    flex-wrap: wrap;
+    color: darkgoldenrod;
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+    
+.contenedor{
+    background-color: black;
+    border: 8px solid darkgoldenrod;
+    max-width: 1450px;
+    height: 1000px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.card{
+margin-left: auto;
+margin-right: auto;
+font-family: Arial;
+display: grid;
+grid-template-rows: 180px auto auto;
+grid-template-columns:1fr;
+border: 1px solid #ede2e29e;
+box-shadow: 0 0 8px 3px #ede2e29e;
+border-radius: 10px;
+overflow: hidden;
+width:400px;
+height: 580px;
+.top{
+grid-row: 1/1;
+position: relative;
+background-image: url("foto3.jpg");
+background-repeat: no-repeat;
+background-size:100%;
+background-position-y: -75px;
+background-color : white;
+height: 200px;
+}
+.circle{
+position: adsolute;
+border-radius: 50%;
+overflow: hidden;
+width:120px;
+height:120px;
+margin-top: 55px;
+margin-left: auto;
+margin-right: 70px;
+top: 25%;
+transform: translate(50%, 0%);
+
+&:hover{
+transform: translate(51%, 2%);
+}
+
+img{
+width:100%;
+height:100%;
+}
+
+
+}
+
+.body{
+grid-row: 2/2;
+.title{
+font-weight: bold;
+font-size: 1.2rem;
+padding-left: 8px;
+margin-top: 35px;
+text-align: center;
+}
+
+.content{
+padding: 4px 10px;
+margin-top: 15px;
+text-align: justify;
+ul{
+    list-style: none;
+color: red;
+}
+
+.skz{
+    margin-top: 50px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+.stay{
+    margin-top: 50px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+.nav{
+    background-color:bisque;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+
+}
+.nav2{
+    text-align: center;
+}
+
+
+.nav3{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav3 li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav3 li a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+li{
+line-height: 150%;
+color: black;
+}
+}
+}
+
+
+.foot{
+grid-row: 3/3;
+text-align: center;
+
+button{
+background-color : orange;
+border:0;
+border-radius:20px;
+width:80%;
+padding:10px;
+margin:6px
+&:hover{
+box-shadow: 0 0 5px 4px lightgray;
+}
+
+a{
+color: white;
+font-size: 1.2rem;
+text-decoration: none;
+}
+
+&:hover a{
+color: black;
+
+}
+}
+
+
+
+    </style>
+    <div class="card">
+        <div class="top">
+            <div class="circle">
+                <img src="yo.jpg" width="180" height="180" alt=""/>
+            </div>
+        </div>
+        <div class="body">
+            <div class="title">
+                Nahomy López
+            </div>
+            <div class="content">
+                <p>Soy estudiante del área de informática, estoy cursando mi último año. Tengo 17 años me gusta mucho los deportes, la música y viajar.</p>
+            <div class="stay">
+                <ul>
+                <li><i class="bi bi-browser-edge"></i>
+                    Creatividad.</li>
+                <li><i class="bi bi-browser-edge"></i>
+                    Hablar otro idioma.</li>
+                <li><i class="bi bi-browser-edge"></i>
+                    Disciplina.</li>
+                <li><i class="bi bi-browser-edge"></i>
+                    Respeto.</li>
+                </ul>
+            </div>
+            <footer class="nav">
+                <nav class="nav2">
+                    <ul class="nav3">
+                        <li class="ll"><a href="https://www.facebook.com/AlexandraLópez" target="_blank" class="iconos social-icon facebook"><i class="bi bi-facebook"></i>
+                            Facebook</a></li>
+                        <li class="ll"><a href="https://www.instagram.com/alex32511201415228" target="_blank" class="iconos social-icon instagram"><i class="bi bi-instagram"></i>
+                            Instagram</a></li>
+                        <li class="ll"><a href="https://www.pinterest.com/nahomyalexandralopeztoro5678" target="_blank" class="iconos social-icon pinterest"><i class="bi bi-pinterest"></i>
+                            Pinterest</a></li>
+                    </ul>
+                </nav>        
+            </footer>
+            </div>
+        </div>
+        </div>
+        
+        
+    
+</body>
+</html>
