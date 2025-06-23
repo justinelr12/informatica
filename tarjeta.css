@@ -1,3 +1,62 @@
+
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cuadroin {
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .cuadroTarjeta,
+    .tarjetao,
+    .card,
+    .cardk,
+    .windowca {
+        width: 95vw !important;
+        min-width: unset;
+        left: 0 !important;
+        top: 0 !important;
+        margin: 10px auto !important;
+        position: static !important;
+    }
+
+    .circulo,
+    .circle,
+    .circlek,
+    .circleca {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Ajusta las posiciones personalizadas */
+    .carlos,
+    .Nahomy,
+    .meidy,
+    .suany,
+    .ceci,
+    .axel,
+    .diego,
+    .joshua,
+    .jociel,
+    .kimbnerly,
+    .issac,
+    .p {
+        top: 0 !important;
+        left: 0 !important;
+        position: static !important;
+        margin: 10px 0 !important;
+    }
+}
+
+
 .cuadroin{
     background-color: rgb(58, 56, 56);
     height: 70px;

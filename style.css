@@ -1,3 +1,107 @@
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .inicio {
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: auto;
+        min-height: 80px;
+        padding: 10px 0;
+        position: static;
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+        left: 0;
+        top: 0;
+        text-align: center;
+        position: static;
+    }
+
+    .inicio a {
+        position: static;
+        display: block;
+        margin: 15px auto 0 auto;
+        width: 90vw;
+        font-size: 22px;
+        height: auto;
+    }
+
+    .val,
+    .information,
+    .information2,
+    .information3 {
+        left: 0;
+        top: 0;
+        position: static;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .informacion,
+    .informationT2,
+    .informationT3 {
+        width: 98vw;
+        left: 0;
+        top: 0;
+        position: static;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .informacion h1,
+    .informationT2 h1,
+    .informationT3 h1 {
+        font-size: 24px;
+        left: 0;
+        top: 0;
+        position: static;
+    }
+
+    .informacion p,
+    .informationT2 p,
+    .informationT3 p {
+        width: 95vw;
+        left: 0;
+        top: 0;
+        position: static;
+        font-size: 15px;
+    }
+
+    .reg,
+    .cuadrousuario {
+        left: 0;
+        top: 0;
+        width: 90vw;
+        position: static;
+        margin: 10px auto;
+    }
+
+    .img1,
+    .img2,
+    .imgh1,
+    .imgh2 {
+        left: 0;
+        top: 0;
+        width: 90vw;
+        max-width: 300px;
+        position: static;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+
+
 body{
 
     background: url(img/abstract-network-and-data-speed.webp);
