@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta Vertical</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #fbcfe8, #d8b4fe);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fondo de burbujas decorativas */
+    .burbuja {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: subir 15s infinite ease-in;
+    }
+
+    .burbuja:nth-child(1) {
+      left: 10%;
+      animation-delay: 0s;
+      width: 25px;
+      height: 25px;
+    }
+
+    .burbuja:nth-child(2) {
+      left: 25%;
+      animation-delay: 2s;
+      width: 15px;
+      height: 15px;
+    }
+
+    .burbuja:nth-child(3) {
+      left: 50%;
+      animation-delay: 4s;
+    }
+
+    .burbuja:nth-child(4) {
+      left: 75%;
+      animation-delay: 1s;
+      width: 20px;
+      height: 20px;
+    }
+
+    .burbuja:nth-child(5) {
+      left: 90%;
+      animation-delay: 3s;
+      width: 30px;
+      height: 30px;
+    }
+
+    @keyframes subir {
+      0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
+
+    .tarjeta {
+      width: 300px;
+      height: 500px;
+      background: #fff;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      padding-top: 80px;
+      border: 4px solid transparent;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #a78bfa, #f472b6);
+    }
+
+    .tarjeta img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ffa6d8;
+      margin-bottom: 10px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .contenido h2 {
+      margin: 10px 0 5px;
+      color: #7e22ce;
+    }
+
+    .contenido p {
+      color: #6b7280;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .redes-sociales {
+      text-align: left;
+      padding: 0 25px;
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.8;
+    }
+
+    .redes-sociales span {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo decorativo de burbujas -->
+  <div class="burbuja"></div>
+  <div class="burbuja"></div>
+  <div class="burbuja"></div>
+  <div class="burbuja"></div>
+  <div class="burbuja"></div>
+
+  <!-- Tarjeta principal -->
+  <div class="tarjeta">
+    <img src="images/perfil.jpg" alt="Imagen bonita">
+    <div class="contenido">
+      <h2>Ceci Castro</h2>
+      <p>Todos estamos conectados.</p>
+      <div class="redes-sociales">
+        <span><strong>Instagram:</strong> @ceci_castro15</span>
+        <span><strong>Facebook:</strong> Ceci Castro</span>
+        <span><strong>TikTok:</strong> @ceci_castro</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

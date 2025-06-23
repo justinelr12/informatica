@@ -1,0 +1,281 @@
+body{
+
+    background: url(img/abstract-network-and-data-speed.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.inicio{
+
+    background-color: rgb(117, 113, 113);
+    height: 100px;
+    width: 102.1%;
+    
+    position: relative;
+    left: -20px;
+    top: -40px;
+
+   
+    
+}
+
+.inicio h1{
+    position: relative;
+    left: 16px;
+    top: 10px;
+    font-size: 50px;
+}
+
+.inicio a{
+    text-align: center;
+    background-color: bisque;
+    color:black;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border:solid black 1px;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    left: 1120px;
+    z-index: 1;
+
+}
+.inicio a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.val{
+    position: relative;
+    left: 400px;
+    top: -60px;
+    background: transparent;
+    font-size: 20px;
+}
+
+.information{
+
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: -60px;
+    left: 500px;
+}
+.information:hover{
+    color: aqua;
+}
+
+
+.information2{
+ background: transparent;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: -60px;
+    left: 600px;
+    
+
+}
+
+.information2:hover{
+
+    color: aqua;
+}
+
+.information3{
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: -60px;
+    left: 700px;
+}
+.information3:hover{
+    color: aqua;
+}
+
+
+.informacion{
+    background-color: white;
+    height: 900px;
+    width: 1000px;
+    position: relative;
+
+    left: 50px;
+    top: -250px;
+   
+}
+
+.informacion h1{
+    text-decoration: none;
+    text-align: center;
+    font-family:'inter',sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+}
+.informacion p{
+     text-decoration: none;
+    font-family:'inter',sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+.informationT2 h1{
+    text-decoration: none;
+    text-align: center;
+    font-family:'inter',sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: -1150px;
+    left: -110px;
+}
+.informationT2 p{
+    font-family:'inter',sans-serif;
+  text-decoration: none;
+    font-family:'inter',sans-serif;
+    font-size: 20px;
+    width: 900px;
+    height: 600px;
+    position: relative;
+    left: 100px;
+    top: -1150px;
+
+}
+
+.reg{
+
+    background-color: white;
+    height:200px ;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 1100px;
+}
+
+
+
+.informationT2{
+    display: none;
+    font-family:'inter',sans-serif;
+}
+
+.img1{
+    border: 1px solid black;
+    box-shadow: 0px 4px  10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    top: -980px;
+    left: 630px;
+}
+.img2{
+    border: 1px solid black;
+    box-shadow: 0px 4px  10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    top: -630px;
+    left: 260px;
+}
+
+.imginf2{
+    display: none;
+}
+
+.imgh1{
+    border: 1px solid black;
+    box-shadow: 0px 4px  10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    top: -1300px;
+    left: 630px;
+}
+.imgh2{
+    border: 1px solid black;
+    box-shadow: 0px 4px  10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    top: -1320px;
+    left: -260px;
+}
+
+.roll{
+    width: 140px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.edad{
+
+    width: 140px;
+    position: relative;
+    top: 10px;
+    left: -2px;
+}
+.but{
+
+    position: relative;
+    top: 70px;
+    left: -70px;
+}
+
+.cuadrousuario{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 400px;
+    position: relative;
+    top: 70px;
+    left: 1100px;
+    border-radius: 20px;
+    display: none;
+    
+
+}
+.nombreusuario{
+    font-family:'inter',sans-serif;
+    text-align: center;
+}
+.edadusuario{
+    text-align: center;
+   font-family:'inter',sans-serif;
+   font-size: 20px;
+}
+.rolusuario{
+    font-family:'inter',sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.informationT3 h1{
+    font-family: 'inter',sans-serif;
+    text-align: center;
+
+    
+}
+.informationT3 {
+    
+    width: 900px;
+    font-family: 'inter',sans-serif;
+    position: relative;
+    top: -1100px;
+    left: 70px;
+    display: none;
+}
+.informationT3 li{
+
+    font-size: 20px;
+}
+.informationT3 p{
+    font-size: 16px;
+}

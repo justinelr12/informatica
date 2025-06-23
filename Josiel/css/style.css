@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background: linear-gradient(to right, #4A90E2, #007AFF);
+    color: white;
+    padding: 40px 20px; 
+    display: flex;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+.background {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: rotateY(10deg);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: rotateY(0deg);
+}
+
+.card-header {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em; 
+    border-radius: 5px;
+    font-size: 1em;
+} 
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; 
+    cursor: pointer;
+  }
+  
+  .boton {
+    width: 80%;
+    padding: 10px;
+    background: #F5A623;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s; 
+    
+  } 
+  .titulo{ 
+    padding: 0 18rem;
+  } 
