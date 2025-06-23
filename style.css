@@ -8,17 +8,17 @@
     }
 
     .inicio {
-        width: 100%;
+        width: 100vw;
         left: 0;
         top: 0;
         height: auto;
-        min-height: 80px;
+        min-height: 60px;
         padding: 10px 0;
         position: static;
     }
 
     .inicio h1 {
-        font-size: 28px;
+        font-size: 6vw;
         left: 0;
         top: 0;
         text-align: center;
@@ -30,8 +30,9 @@
         display: block;
         margin: 15px auto 0 auto;
         width: 90vw;
-        font-size: 22px;
+        font-size: 4vw;
         height: auto;
+        min-width: 120px;
     }
 
     .val,
@@ -44,6 +45,7 @@
         display: block;
         margin: 10px auto;
         text-align: center;
+        font-size: 1.1rem;
     }
 
     .informacion,
@@ -54,13 +56,14 @@
         top: 0;
         position: static;
         padding: 10px;
-        font-size: 16px;
+        font-size: 1rem;
+        min-width: 0;
     }
 
     .informacion h1,
     .informationT2 h1,
     .informationT3 h1 {
-        font-size: 24px;
+        font-size: 5vw;
         left: 0;
         top: 0;
         position: static;
@@ -73,7 +76,8 @@
         left: 0;
         top: 0;
         position: static;
-        font-size: 15px;
+        font-size: 1rem;
+        min-width: 0;
     }
 
     .reg,
@@ -81,8 +85,10 @@
         left: 0;
         top: 0;
         width: 90vw;
+        min-width: 0;
         position: static;
         margin: 10px auto;
+        min-height: 80px;
     }
 
     .img1,
@@ -93,6 +99,7 @@
         top: 0;
         width: 90vw;
         max-width: 300px;
+        min-width: 0;
         position: static;
         display: block;
         margin: 15px auto;
@@ -127,27 +134,29 @@ body{
 }
 
 .inicio h1{
-    position: relative;
-    left: 16px;
-    top: 10px;
-    font-size: 50px;
+    position: static;
+    font-size: 3vw;            /* Antes: 50px */
+    margin: 1vw 0;
+    text-align: center;
 }
 
 .inicio a{
     text-align: center;
     background-color: bisque;
     color:black;
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    border:solid black 1px;
+    height: 3vw;               /* Antes: 50px */
+    min-height: 40px;
+    width: 15vw;               /* Antes: 200px */
+    min-width: 120px;
+    border-radius: 0.7vw;      /* Antes: 10px */
+    border:solid black 0.1vw; /* Antes: 1px */
     text-decoration: none;
-    font-size: 30px;
-    position: absolute;
-    top: 400px;
-    left: 1120px;
+    font-size: 1.5vw;          /* Antes: 30px */
+    position: static;
+    margin: 1vw auto;
     z-index: 1;
-
+    display: block;
+    transition: background 0.3s, color 0.3s;
 }
 .inicio a:hover{
     background-color: black;
@@ -178,14 +187,12 @@ body{
 
 
 .information2{
- background: transparent;
-    font-size: 20px;
+    background: transparent;
+    font-size: 1.25rem; /* 20px ≈ 1.25rem */
     border: none;
     position: relative;
-    top: -60px;
-    left: 600px;
-    
-
+    top: -4vw;           /* -60px ≈ -4vw */
+    left: 40vw;          /* 600px ≈ 40vw */
 }
 
 .information2:hover{
@@ -195,11 +202,11 @@ body{
 
 .information3{
     background: transparent;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
     position: relative;
-    top: -60px;
-    left: 700px;
+    top: -4vw;
+    left: 46vw;          /* 700px ≈ 46vw */
 }
 .information3:hover{
     color: aqua;
@@ -208,12 +215,11 @@ body{
 
 .informacion{
     background-color: white;
-    height: 900px;
-    width: 1000px;
+    height: 60vw;        /* 900px ≈ 60vw */
+    width: 70vw;         /* 1000px ≈ 70vw */
     position: relative;
-
-    left: 50px;
-    top: -250px;
+    left: 3vw;           /* 50px ≈ 3vw */
+    top: -16vw;          /* -250px ≈ -16vw */
    
 }
 
@@ -382,4 +388,68 @@ body{
 }
 .informationT3 p{
     font-size: 16px;
+}
+
+.informacion,
+.informationT2,
+.informationT3 {
+    background-color: white;
+    width: 90vw;
+    max-width: 900px;
+    min-width: 220px;
+    margin: 4vw auto;
+    padding: 4vw 3vw;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vw 2vw rgba(0,0,0,0.08);
+    font-family: 'inter', sans-serif;
+    position: static;
+    top: unset;
+    left: unset;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+.informacion h1,
+.informationT2 h1,
+.informationT3 h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Escala entre 24px y 40px */
+    margin: 2vw 0 1vw 0;
+    text-align: center;
+}
+
+.informacion p,
+.informationT2 p,
+.informationT3 p,
+.informationT3 li {
+    font-size: clamp(1rem, 3vw, 1.3rem); /* Escala entre 16px y 21px */
+    width: 100%;
+    margin: 1vw auto;
+    text-align: justify;
+    min-width: 0;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+/* Para móvil, el cuadro ocupa casi todo el ancho */
+@media (max-width: 600px) {
+    .informacion,
+    .informationT2,
+    .informationT3 {
+        width: 98vw;
+        padding: 5vw 2vw;
+        min-width: 0;
+        max-width: 100vw;
+    }
+    .informacion h1,
+    .informationT2 h1,
+    .informationT3 h1 {
+        font-size: clamp(1.2rem, 7vw, 2rem);
+    }
+    .informacion p,
+    .informationT2 p,
+    .informationT3 p,
+    .informationT3 li {
+        font-size: clamp(0.95rem, 4vw, 1.1rem);
+    }
 }
